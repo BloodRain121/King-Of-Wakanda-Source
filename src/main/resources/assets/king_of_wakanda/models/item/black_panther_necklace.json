@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "king_of_wakanda:item/black_panther_necklace"
+    }
+  }

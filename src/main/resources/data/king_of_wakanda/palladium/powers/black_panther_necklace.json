@@ -1,0 +1,85 @@
+{
+  "name": "Black Panther Necklace",
+  "icon": "king_of_wakanda:textures/icon/suit_icon.png",
+  "abilities": {
+    "render": {
+      "type": "palladium:render_layer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "render_layer": "king_of_wakanda:black_panther"
+    },
+    "suit": {
+      "type": "palladium:shrink_body_overlay",
+      "icon": "king_of_wakanda:textures/item/black_panther_necklace.png",
+      "title": "Suit",
+      "start_value": 0,
+      "max_value": 12,
+      "list_index": "0",
+      "bar_color": "purple",
+      "hidden": true,
+      "hidden_in_bar": false,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle"
+          }
+        ]
+      }
+    },
+    "skin_change": {
+      "type": "palladium:skin_change",
+      "texture": "king_of_wakanda:textures/models/nothing.png",
+      "model_type": "keep",
+      "priority": 50,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "king_of_wakanda:black_panther_necklace",
+            "ability": "suit",
+            "property": "value",
+            "min": 10,
+            "max": 12
+          }
+        ]
+      }
+    },
+    "armor": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "attribute": "minecraft:generic.armor",
+      "amount": 30,
+      "operation": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "king_of_wakanda:black_panther_necklace",
+            "ability": "suit"
+          }
+        ]
+      }
+    },
+    "restrict_slots": {
+      "type": "palladium:restrict_slots",
+      "bar_color": "light_gray",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "slots": [
+        "head",
+        "legs",
+        "feet"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "king_of_wakanda:black_panther_necklace",
+            "ability": "suit"
+          }
+        ]
+      }
+    }
+  }
+}
