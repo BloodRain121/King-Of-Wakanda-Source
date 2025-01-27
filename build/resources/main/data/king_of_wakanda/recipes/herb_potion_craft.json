@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:bowl"
+        },
+        {
+            "item": "palladium:heart_shaped_herb"
+        }
+    ],
+    "result": {
+        "item": "king_of_wakanda:herb_potion",
+        "count": 1
+    }
+}

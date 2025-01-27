@@ -1,0 +1,122 @@
+{
+  "name": "Black Panther Necklace",
+  "icon": "king_of_wakanda:textures/icon/suit_icon.png",
+  "abilities": {
+    "render": {
+      "type": "palladium:render_layer",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "render_layer": "king_of_wakanda:black_panther"
+    },
+    "suit": {
+      "type": "palladium:animation_timer",
+      "title": "Activate",
+      "start_value": 0,
+      "max_value": 12,
+      "hidden_in_bar": false,
+      "hidden": true,
+      "bar_color": "purple",
+      "icon": "king_of_wakanda:textures/item/black_panther_necklace.png",
+      "conditions": {
+        "enabling": {
+          "type": "palladium:toggle",
+          "ticks": 3600
+        }
+      }
+    },
+    "shrink_overlay": {
+      "type": "palladium:shrink_body_overlay",
+      "max_value": 5,
+      "conditions": {
+        "enabling": {
+          "type": "palladium:ability_integer_property",
+          "power": "king_of_wakanda:black_panther_necklace",
+          "ability": "suit",
+          "property": "value",
+          "min": 1,
+          "max": 12
+        }
+      }
+    },
+    "hide_arm_layers": {
+      "type": "palladium:hide_body_part",
+      "body_parts": [
+        "right_arm_overlay",
+        "left_arm_overlay",
+        "chest_overlay"
+      ],
+      "conditions": {
+        "enabling": {
+          "type": "palladium:ability_integer_property",
+          "power": "king_of_wakanda:black_panther_necklace",
+          "ability": "suit",
+          "property": "value",
+          "min": 6,
+          "max": 12
+        }
+      }
+    },
+    "fall_resistance": {
+      "type": "palladium:damage_immunity",
+      "title": "Fall Resistance",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "list_index": -1,
+      "damage_sources": [
+        "minecraft:is_fall"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "king_of_wakanda:black_panther_necklace",
+            "ability": "suit",
+            "property": "value",
+            "min": 11,
+            "max": 12
+          }
+        ]
+      }
+    },
+    "armor": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "attribute": "minecraft:generic.armor",
+      "amount": 30,
+      "operation": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_integer_property",
+            "power": "king_of_wakanda:black_panther_necklace",
+            "ability": "suit",
+            "property": "value",
+            "min": 11,
+            "max": 12
+          }
+        ]
+      }
+    },
+    "restrict_slots": {
+      "type": "palladium:restrict_slots",
+      "bar_color": "light_gray",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "slots": [
+        "head",
+        "legs",
+        "feet"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "power": "king_of_wakanda:black_panther_necklace",
+            "ability": "suit"
+          }
+        ]
+      }
+    }
+  }
+}

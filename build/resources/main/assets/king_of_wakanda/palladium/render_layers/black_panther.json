@@ -1,0 +1,37 @@
+{
+    "type": "palladium:compound",
+    "layers": [
+        {
+            "model_layer": "palladium:humanoid#tight_suit",
+            "texture": {
+              "base": "king_of_wakanda:textures/models/black_panther_suit.png",
+                "transformers": [
+                    {
+              "type": "palladium:alpha_mask",
+              "mask": "king_of_wakanda:textures/models/alpha_masks/transformation_#TIMER.png"
+                    }
+                ],
+                "variables": {
+                    "TIMER": {
+                        "type": "palladium:ability_integer_property",
+                        "power": "king_of_wakanda:black_panther_necklace",
+                        "ability": "suit",
+                        "property": "value",
+                        "divide": 1
+                    }
+                },
+          "output": "king_of_wakanda:textures/models/black_panther_suit_#TIMER"
+            }
+        },
+        {
+          "model_layer": "minecraft:player#main",
+          "model_type": "minecraft:player",
+          "texture": "king_of_wakanda:textures/models/necklace.png",
+          "render_type": "solid"
+        }
+    ]
+  }
+  
+  
+  
+  

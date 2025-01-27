@@ -1,0 +1,89 @@
+{
+  "name": "Black Panther",
+  "icon": "king_of_wakanda:textures/icon/suit_icon.png",
+  "abilities": {
+  "speed": {
+  "type": "palladium:attribute_modifier",
+  "icon": "king_of_wakanda:textures/icon/speed_icon.png",
+  "title": "Run Speed",
+  "bar_color": "light_gray",
+  "hidden": false,
+  "list_index": -1,
+  "attribute": "minecraft:generic.movement_speed",
+  "amount": 0.07,
+  "operation": 0,
+    "conditions": {
+      "enabling": [
+        {
+          "type": "palladium:sprinting"
+        }
+      ]
+    }
+},
+  "resistance": {
+  "type": "palladium:attribute_modifier",
+  "icon": "king_of_wakanda:textures/icon/resistance_icon.png",
+  "title": "Resistance",
+  "bar_color": "light_gray",
+  "hidden": false,
+  "list_index": -1,
+  "attribute": "minecraft:generic.knockback_resistance",
+  "amount": 8,
+  "operation": 0
+},
+  "fall_resistance": {
+  "type": "palladium:attribute_modifier",
+  "icon": "king_of_wakanda:textures/icon/fall_resistance_icon.png",
+  "title": "Fall Resistance",
+  "bar_color": "light_gray",
+  "hidden": false,
+  "list_index": -1,
+  "attribute": "palladium:fall_resistance",
+  "amount": 35,
+  "operation": 0
+},
+  "health": {
+  "type": "palladium:attribute_modifier",
+  "icon": "king_of_wakanda:textures/icon/health_icon.png",
+  "title": "Health",
+  "bar_color": "light_gray",
+  "hidden": false,
+  "list_index": -1,
+  "attribute": "minecraft:generic.max_health",
+  "amount": 10,
+  "operation": 0
+},
+  "jump power": {
+  "type": "palladium:attribute_modifier",
+  "icon": "king_of_wakanda:textures/icon/jump_power_icon.png",
+  "title": "Jump Power",
+  "bar_color": "light_gray",
+  "hidden": false,
+  "list_index": -1,
+  "attribute": "palladium:jump_power",
+  "amount": 0.4,
+  "operation": 0
+},
+  "strenght": {
+  "type": "palladium:attribute_modifier",
+  "icon": "king_of_wakanda:textures/icon/strenght_icon.png",
+  "title": "Punch Damage",
+  "bar_color": "light_gray",
+  "hidden": false,
+  "list_index": -1,
+  "attribute": "palladium:punch_damage",
+  "amount": 8,
+  "operation": 0
+},
+    "healing": {
+    "type": "palladium:healing",
+    "icon": "king_of_wakanda:textures/icon/healing_icon.png",
+    "title": "Healing",
+    "bar_color": "light_gray",
+    "hidden": false,
+    "list_index": -1,
+    "frequency": 10000000,
+    "amount": 1
+}
+  }
+}

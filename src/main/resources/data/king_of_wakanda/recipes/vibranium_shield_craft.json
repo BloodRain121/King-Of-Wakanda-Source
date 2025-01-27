@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "iRi",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "king_of_wakanda:vibranium_sheet"
+        },
+        "R": {
+            "item": "minecraft:shield"
+        }
+    },
+    "result": {
+        "item": "king_of_wakanda:vibranium_shield",
+        "count": 1
+    }
+}
